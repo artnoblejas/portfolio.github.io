@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: auto;
+    
+}
+
+body{
+    
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.header {
+    border: 1px;
+    border-color: var(--second-bg-color);
+    background-color: var(--second-bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo {
+    font-size: 2.5rem;
+    color: #E8E2E2;
+    font-weight: 600;
+
+}
+.navbar a {
+    font-size:1.7rem ;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955)
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+}
+
+
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+  
+}
+
+.Home {
+    display: flex;
+    align-items: center;
+    padding: 0 9%; 
+    height: 100vh;
+    width: 100%;
+    background: url(images/kk.png) no-repeat;
+    background-size: 770px;
+    background-position: right 50%;
+}
+.home-imgHover{
+position: absolute;
+top: 0;
+right: 0;
+width: 45%;
+background: transparent;
+}
+
+.home-imgHover-bg{
+
+     border-radius: 50%;
+     margin-left: 70%;
+     margin-top: 0%;
+}
+
+.home-img img{
+    width: 20vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content{
+    max-width: 60rem;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.home-content .text-animate{
+position: relative;
+width: 32.8rem;
+}
+
+.home-content .text-animate h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--main-color);
+}
+.btn-box {
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: var(--bg-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--text-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box .btn:hover{
+    color: var(--second-bg-color); /* Study button bg color */
+}
+/* 
+.btn-box .btn:nth-child(2) {
+    background: transparent; -- Sleep button First bg color
+    color: var(--main-color); --Sleep button text color first display
+
+}
+.btn-box .btn:nth-child(2):hover{
+    color: var(--bg-color);      --Sleep button text color after animation 
+}
+.btn-box .btn:nth-child(2)::before{
+    background: var(--main-color);  -- Sleep button bg after animation color 
+}   */
+
+.btn-box .btn::before{ /* orignal animation for button */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover::before{ /*size for color animation width*/
+    width: 100%;
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    -webkit-box-shadow:0px 0px 11px 2px rgba(158,0,45,1);
+    -moz-box-shadow: 0px 0px 11px 2px rgba(158,0,45,1);
+    box-shadow: 0px 0px 11px 2px rgba(158,0,45,1);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+}
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+.home-sci a:hover::before{
+    width: 100%;
+}
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right:0 ;
+    width: 45vw;
+    height: 100vw;
+    background: transparent;
+   
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+    
+}
+
+.heading{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.heading span{
+    color: var(--main-color);
+}
+
+.about-image{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.about-image img{/* img is for the picture itself*/
+
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+    -webkit-box-shadow:0px 0px 11px 2px rgba(0,123,255,1);
+    -moz-box-shadow: 0px 0px 11px 2px rgba(0,123,255,1);
+    box-shadow: 0px 0px 11px 2px rgba(0,123,255,1);
+}
+.about-image .circle-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0); /* to place the spane border outside the image */
+    width: 100%;
+    height: 100%;
+    border-color: var(--main-color);
+    border-radius: 50%;
+    border-top: .2rem solid transparent;
+    border-bottom: .2rem solid transparent;
+    border-left: .2rem solid #2f00ff;
+    border-right: .2rem solid#2f00ff;
+}
+
+.About-content{
+    text-align: center;
+}
+
+.About-content h3{
+    font-size: 2.6rem;
+}
+
+.About-content p{
+    font-size: 1.6rem;
+}
+
+.btn-box.about{
+
+ display: inline-block;
+ width: 15rem;
+ height: 12rem;
+
+}
+
+.btn-box::before{
+    transition: .3s;
+    background: var(--second-bg-color);
+}
+
+.Education-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 6rem;
+}
+.right-side{
+    border-right: 75;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.left-side{
+    border-left: 75;
+    flex: 1 1 40rem;
+}

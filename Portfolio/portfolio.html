@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me and myself</title>
+    <link rel="stylesheet" href="portflio.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">ALN.</a>
+
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="Home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Art Luther Noblejas</span></h1>
+            <div class="text-animate">
+                <h3>Be one with the future</h3>
+            </div>
+            <p>Ang katol ay para sa lamok</p>
+
+            <div class="btn-box">
+                <a href="#" class="btn">Study</a>
+                <a href="#" class="btn">Sleep</a>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.facebook.com/profile.php?id=100088173931231" target="_blank"><i
+                    class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/ey_njs/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <div class="home-imgHover-bg">
+            <div class="home-imgHover">
+                <span class="bg-span"></span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="about-image">
+            <img src="images/profile.jpg" alt="">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="About-content">
+            <h3>BSIT-Student</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque recusandae quaerat minus aperiam
+                unde qui culpa velit voluptas soluta esse voluptatibus, deserunt provident laborum at quos cupiditate
+                blanditiis maiores ratione!</p>
+        </div>
+        <div class="btn-box about">
+            <a href="#" class="btn">Read More</a>
+        </div>
+        </div>
+    </section>
+
+    <section class="Education" id="education">
+        <div class="Education-content">
+            <h3 class="Education-h3">Education</h3>
+            <div class="right-side">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit consequatur eius, excepturi
+                    laborum eaque quasi fuga vitae iusto veritatis corrupti tenetur, necessitatibus amet non. At nihil
+                    cum labore saepe.</p>
+            </div>
+
+            <div class="left-side">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quia autem ullam vitae libero
+                    expedita sequi fugiat facere quaerat ipsa hic omnis cum totam explicabo, soluta incidunt fuga, id
+                    nisi!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="Skills" id="skills">
+        <div class="skills-content">
+            <h2>Pogi lang</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempore delectus error minima
+                recusandae id aliquid excepturi provident mollitia magni. Atque quod laborum exercitationem vel tempore,
+                expedita repudiandae in assumenda.</p>
+        </div>
+    </section>
+
+    <section class="Contact" id="contact">
+        <div class="Contact-content">
+            <h2> Contact </h2>
+            <div class="Conact-logo">
+              
+        </div>
+    </section>
+    <script src="js/script.js> </script>
+</body>
+</html>
